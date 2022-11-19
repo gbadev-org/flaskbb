@@ -7,8 +7,12 @@
     <meta name="description" content="FlaskBB is a forum software written in Flask">
     <meta name="author" content="FlaskBB Team">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32.png') }}">
+    <link rel="icon" type="image/png" sizes="128x128" href="{{ url_for('static', filename='favicon-128.png') }}">
+    <link rel="icon" type="image/png" sizes="180x180" href="{{ url_for('static', filename='favicon-180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='favicon-192.png') }}">
+    
     <title>
         {% block title %}
         {%- if not page_title -%}
