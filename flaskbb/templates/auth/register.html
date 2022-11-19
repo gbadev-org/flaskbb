@@ -24,6 +24,17 @@
             {% endif %}
 
             {{ horizontal_field(form.language) }}
+            <div class="row mb-3" style="font-size: small;/*! max-width: 700px; */">
+                <div class="offset-3 col-4">
+                    <p><strong>Terms of service</strong></p>
+                    <p>We (the gbadev.net administration) may update these terms at any time. Your continued use of these forums indicates your acceptance of the terms even as they change.</p>
+                    <p>The data you submit to us is stored in Frankfurt, Germany. We will use it only for the purposes necessary to host and moderate the gbadev.net forums. You give us permission to indefinitely store, transmit and publicly display all the content which you publish on these forums.</p>
+                    <p>We will make daily backups of your data, and store each backup for no longer than 1 year.</p>
+                    <p>You agree not to post any abusive, obscene, vulgar, slanderous, hateful, threatening or sexually-orientated content, or anything illegal in Germany.</p>
+                    <p>We may remove or edit your posts and may terminate your account at any time (of course we are unlikely to do so unless you violate these terms).</p>
+                    <p>We may email you about your account, the operation of the forums, any boards and topics that you have chosen to subscribe to, and any direct messages that you receive. We will not email you for marketing purposes or anything unrelated to the forums, and will not share your email address with any 3rd parties.</p>
+                </div>
+            </div>
             {{ horizontal_field(form.accept_tos, div_class="offset-3 col-4")}}
             {{ run_hook('flaskbb_tpl_form_registration_after', form=form) }}
             {{ horizontal_field(form.submit, div_class="offset-3 col-4")}}
