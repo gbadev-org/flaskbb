@@ -1,5 +1,7 @@
 {% extends theme("layout.html") %}
 {% set page_title = _("%(title)s - Topic", title=topic.title) %}
+{% set page_description = topic.first_post.content|markup|striptags|truncate %}
+{% set page_author = topic.first_post.username %}
 {% set active_forum_nav=True %}
 
 {% block content %}
