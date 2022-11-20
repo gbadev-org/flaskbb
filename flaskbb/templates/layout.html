@@ -46,6 +46,9 @@
             <!-- forum header - place for the project title and subtitle -->
             {% block header %}
             <div class="flaskbb-header">
+                <div class="d-none d-sm-block" style="float: left; padding: 5px 25px 10px 0">
+                    <img src="{{ url_for('static', filename='logo.png') }}" style="width: 110px; height: 110px;">
+                </div>
                 <div class="flaskbb-meta">
                     <div class="flaskbb-title">{{ flaskbb_config["PROJECT_TITLE"] }}</div>
                     <div class="flaskbb-subtitle">{{ flaskbb_config["PROJECT_SUBTITLE"] }}</div>
