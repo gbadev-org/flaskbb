@@ -695,6 +695,7 @@ class Topic(HideableCRUDMixin, db.Model):
             # Update the topic count
             forum.topic_count += 1
 
+        db.session.add(self)
         db.session.commit()
         current_app.pluggy.hook.flaskbb_event_topic_save_after(topic=self,
                                                                is_new=True)
